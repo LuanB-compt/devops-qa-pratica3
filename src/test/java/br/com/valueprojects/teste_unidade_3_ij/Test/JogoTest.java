@@ -39,20 +39,20 @@ public class JogoTest {
 	}
 	
 	//RED - TDD
-	
-	/* @Test
-	    public void verificaMediaTest() {
-	      //Arrange  
-		 Jogo jogo = new Jogo("Jogo 01");
 
-	        Participante membroUm   = new Participante("Membro Um");
-	        Participante membroDois = new Participante("Membro Dois");
+	@Test
+	public void verificaMediaTest() {
+		//Arrange
+		Jogo jogo = new Jogo("Jogo 01");
 
-	        jogo.anota(new Resultado(membroUm, 500));
-	        jogo.anota(new Resultado(membroDois, 500));
-//Action + Assert
-	        assertEquals(500, jogo.calculaMedia(), 1e-3);
-	    }*/
+        Participante membroUm   = new Participante("Membro Um");
+        Participante membroDois = new Participante("Membro Dois");
+
+        jogo.anota(new Resultado(membroUm, 500));
+        jogo.anota(new Resultado(membroDois, 500));
+		//Action + Assert
+        assertEquals(500, jogo.calculaMedia(), 1e-3);
+	}
 	
 	@Test
 	public void naoDeveAceitarDoisResultadosDoMesmoParticipante(){
